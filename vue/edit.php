@@ -1,9 +1,8 @@
 <?php
 require './header.php';
-
 ?>
 
-<h1>Add Vehicle</h1>
+<h2>Edit Vehicle</h2>
 
 <form>
   <div class="form-group">
@@ -24,8 +23,7 @@ require './header.php';
   </div>
   <div class="form-group">
     <label for="exampleDescription">Description</label>
-
-        <textarea class="form-control" id="exampleDescription" rows="3"></textarea>
+    <textarea class="form-control" id="exampleDescription" rows="3"></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
