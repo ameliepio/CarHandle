@@ -1,20 +1,19 @@
 <?php
 
-class moto extends vehicle{
+class moto extends vehicle
+{
 
-protected $twowheels;
-
-
+    protected $twowheels;
     /**
      * Get the value of Twowheels
      *
      * @return mixed
      */
+
     public function getTwowheels()
     {
         return $this->twowheels;
     }
-
     /**
      * Set the value of Twowheels
      *
@@ -22,11 +21,10 @@ protected $twowheels;
      *
      * @return self
      */
+
     public function setTwowheels($twowheels)
     {
         $this->twowheels = $twowheels;
-
         return $this;
     }
-
 }

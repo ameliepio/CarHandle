@@ -113,7 +113,6 @@ public function __construct(array $valeurs)
     {
         return $this->price;
     }
-
     /**
      * Set the value of Price
      *
@@ -127,5 +126,4 @@ public function __construct(array $valeurs)
 
         return $this;
     }
-
 }
