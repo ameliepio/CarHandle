@@ -1,18 +1,8 @@
 <?php
 
-class car extends vehicle{
+class Car extends Vehicle{
 
 protected $fourwheels;
-
-
-
-// public function __construct($categories,$mark,$color,$price,$fourwheel){
-//
-// parent:: __construct ($valeurs);
-//
-// $this->setFourwheels($fourwheels);
-//
-// }
 
     /**
      * Get the value of Fourwheels

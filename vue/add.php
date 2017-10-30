@@ -1,5 +1,5 @@
 <?php
-require './header.php';
+require 'header.php';
 
 ?>
 
@@ -32,5 +32,5 @@ require './header.php';
 </form>
 
 <?php
-require './footer.php';
+require 'footer.php';
 ?>

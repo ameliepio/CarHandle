@@ -1,5 +1,5 @@
 <?php
-require './header.php';
+require 'header.php';
 ?>
 
 <div class="delete">
@@ -9,5 +9,5 @@ require './header.php';
 
 </div>
 <?php
-require './footer.php';
+require 'footer.php';
 ?>

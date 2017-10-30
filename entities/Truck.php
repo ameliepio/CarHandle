@@ -1,6 +1,6 @@
 <?php
 
-class trucks extends vehicle
+class Truck extends Vehicle
 {
 
     protected $sixwheels;
