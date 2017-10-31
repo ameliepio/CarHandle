@@ -18,7 +18,6 @@ $manager = new vehiclesManager($bdd);
 if (isset($_POST['Categories']) AND isset($_POST['Mark']) AND isset($_POST['Color']) AND isset($_POST['Price'])){
 
 // delete objet
-
 $manager->delete($vehicle);
 }
 include '../vue/delete.php';

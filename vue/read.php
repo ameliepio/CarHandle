@@ -42,7 +42,8 @@
  </div>
          <div class="form-group">
         <label for="exampleTextarea">Description</label>
-        <textarea class="form-control" id="exampleDescription" rows="3"></textarea>
+
+        <textarea class="form-control" id="exampleDescription" rows="3"><?php echo $vehicle->getDescription();?></textarea>
 </div>
 
  </form>

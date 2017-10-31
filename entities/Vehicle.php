@@ -14,6 +14,9 @@ class Vehicle
     protected $color;
 
     protected $price;
+
+    protected $description;
+
     const MARKVEHICLE = array(
         'bmw',
         'audi',
@@ -166,6 +169,31 @@ class Vehicle
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
+    }
+
+
+    /**
+     * Get the value of Description
+     *
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set the value of Description
+     *
+     * @param mixed description
+     *
+     * @return self
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
 
         return $this;
     }
