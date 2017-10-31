@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=carHandle;charset=utf8', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=carHandle;charset=utf8', '', '');
 }
 
 catch (Exception $e)
