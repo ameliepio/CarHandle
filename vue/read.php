@@ -1,14 +1,10 @@
-<?php
-require './header.php';
-?>
-
 <div id="main" class="container-fluid">
     <h3 class="page-header"></h3>
 
-<form class="" action="index.html" method="post">
+<form class="" action="read.php" method="post">
         <div id="actions">
             <div class="col-md-3">
-                <a href="add.html" class="btn btn-outline-success">Add vehicle</a>
+                <a href="read.php" class="btn btn-outline-success">Add vehicle</a>
             </div>
         </div>
 
@@ -26,15 +22,17 @@ require './header.php';
                     </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1001</td>
-                    <td>Lorem </td>
-                    <td>Jes</td>
-                    <td>0bbbbbb</td>
-                    <td class="row .col-xs-4 .col-sm-6">
-                            <a class="btn btn-outline-info" href="view.html">read</a>
-                        <a class="btn btn-outline-warning" href="edit.html">Edit</a>
-                        <a class="btn btn-outline-danger"  href="#" data-toggle="modal" data-target="#delete-modal">delete</a>
+                    <tr>
+
+
+                            <tr>
+                                <td><?php echo $vehicle->getCategories();?></td>
+                                <td><?php echo $vehicle->getMark();?></td>
+                                <td><?php echo $vehicle->getColor();?></td>
+                                <td><?php echo $vehicle->getPrice();?></td>
+                                <td class="row .col-xs-4 .col-sm-6">
+
+                                    <a class="btn btn-outline-info" href="read.php?id=<?php echo $vehicle->getId();?>">read</a>
                     </td>
                 </tr>
             </tbody>
@@ -47,7 +45,3 @@ require './header.php';
 
  </form>
         </div>
-
- <?php
-require './footer.php';
-?>

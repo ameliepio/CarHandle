@@ -6,10 +6,10 @@ require 'header.php';
 <div id="main" class="container-fluid">
     <h3 class="page-header"></h3>
 
-<form class="" action="index.html" method="post">
+<form class="" action="index.php" method="post">
         <div id="actions">
             <div class="col-md-3">
-                <a href="add.html" class="btn btn-outline-success">Add vehicle</a>
+                <a href="index.php" class="btn btn-outline-success">Add vehicle</a>
             </div>
         </div>
         <div id="list" class="row">
@@ -26,20 +26,26 @@ require 'header.php';
             </thead>
             <tbody>
                 <?php
-                foreach  ($vehicles as $key=>$value)
+
+                foreach  ($vehicles as $vehicle)
                 {
                     ?>
                     <tr>
-                        <td><?php echo $value->getCategories();?></td>
-                        <td><?php echo $value->getMark();?></td>
-                        <td><?php echo $value->getColor();?></td>
-                        <td><?php echo $value->getPrice();?></td>
+                        <td><?php echo $vehicle->getCategories();?></td>
+                        <td><?php echo $vehicle->getMark();?></td>
+                        <td><?php echo $vehicle->getColor();?></td>
+                        <td><?php echo $vehicle->getPrice();?></td>
                         <td class="row .col-xs-4 .col-sm-6">
-                                <a class="btn btn-outline-info" href="view.html">read</a>
-                            <a class="btn btn-outline-warning" href="edit.html">Edit</a>
+
+
+ <!-- passe en GET l'id de l'objet (vehicle), le get est envoyé vers read.php -->
+                            <a class="btn btn-outline-info" href="read.php?id=<?php echo  $vehicle->getId()?>">read</a>
+
+                            <a class="btn btn-outline-warning" href="edit.php">Edit</a>
                             <a class="btn btn-outline-danger"  href="#" data-toggle="modal" data-target="#delete-modal">delete</a>
                         </td>
                     </tr>
+
 
                     <?php
                 }

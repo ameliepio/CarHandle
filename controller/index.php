@@ -7,7 +7,7 @@ spl_autoload_register('my_autoloader');
 
 require '../model/connexion.php';
 require_once ('../model/classManager.php');
-require_once ('../model/Vehicle.php');
+
 
 
 
