@@ -6,14 +6,14 @@ include '../entities/'.$class.'.php';
 spl_autoload_register('my_autoloader');
 
 require '../model/connexion.php';
-require_once ('../model/classManager.php');
+require_once ('../model/vehiclesManager.php');
 
 
 
 
 // je crée mon manager pour pouvoir me connecter a la base de donnée
 // create my manager for connection bdd
-$manager = new Manager($bdd);
+$manager = new vehiclesManager($bdd);
 
 // je recupere et j'affiche ma liste de vehicules
 // I get back and I display my list of vehicles

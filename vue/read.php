@@ -32,7 +32,9 @@
                                 <td><?php echo $vehicle->getPrice();?></td>
                                 <td class="row .col-xs-4 .col-sm-6">
 
-                                    <a class="btn btn-outline-info" href="read.php?id=<?php echo $vehicle->getId();?>">read</a>
+                                    <!-- <a class="btn btn-outline-info" href="read.php?id=<?php echo $vehicle->getId();?>">read</a> -->
+                                    <a class="btn btn-outline-warning" href="edit.php">Edit</a>
+                                    <a class="btn btn-outline-danger"  href="delete.php">delete</a>
                     </td>
                 </tr>
             </tbody>

@@ -43,7 +43,8 @@ require 'header.php';
                             <a class="btn btn-outline-info" href="read.php?id=<?php echo  $vehicle->getId()?>">read</a>
 
                             <a class="btn btn-outline-warning" href="edit.php">Edit</a>
-                            <a class="btn btn-outline-danger"  href="#" data-toggle="modal" data-target="#delete-modal">delete</a>
+                            <a class="btn btn-outline-danger"  href="delete.php">delete</a>
+                            <!-- data-toggle="modal" data-target="#delete-modal" -->
                         </td>
                     </tr>
 
