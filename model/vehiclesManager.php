@@ -57,12 +57,12 @@ class vehiclesManager
     // function qui modifie le vehicule en bdd via le Manager
     //function that update the vehicle in bdd via the Manager
      function update($vehicle) {
-        $q = $this->bd->prepare('UPDATE vehicle SET categories=: categories,:mark=mark,:color=color,:price=price)');
+        $q = $this->bd->prepare('UPDATE vehicle SET categories=: categories,:mark=mark,:color=color,:price=price,:description=description)');
                   $q->bindValue(':categories',$vehicle->getCategories(), PDO::PARAM_STR);
                   $q->bindValue(':mark', $vehicle->getMark(), PDO::PARAM_INT);
                   $q->bindValue(':color', $vehicle->getColor(), PDO::PARAM_STR);
                   $q->bindValue(':price', $vehicle->getPrice(), PDO::PARAM_STR);
-
+                   $q->bindValue(':description', $vehicle->getDescription(), PDO::PARAM_STR);
     $q->execute();
     }
 

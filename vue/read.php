@@ -4,7 +4,7 @@
 <form class="" action="read.php" method="post">
         <div id="actions">
             <div class="col-md-3">
-                <a href="read.php" class="btn btn-outline-success">Add vehicle</a>
+                <a href="add.php" class="btn btn-outline-success">Add vehicle</a>
             </div>
         </div>
 

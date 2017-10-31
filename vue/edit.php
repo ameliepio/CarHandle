@@ -4,6 +4,7 @@ require 'header.php';
 
 <h2>Edit Vehicle</h2>
 
+
 <form class="form"  method='post' action="edit.php">
 <div class="form-group" >
 <label for="exampleInputCategories">Categories</label>

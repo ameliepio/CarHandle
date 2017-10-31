@@ -24,4 +24,5 @@ $class=ucfirst($donnee['categories']);
 $vehicle= new $class($donnee);
 
 include '../vue/read.php';
+
 require '../vue/footer.php';
