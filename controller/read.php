@@ -11,15 +11,16 @@ require_once ('../model/classManager.php');
 
 
 // je crée mon manager pour pouvoir me connecter a la base de donnée
+//create manager for connection bdd
 $manager = new Manager($bdd);
 
 // création d'une variable display qui retourne de la base de donnée un vehicule dont l'id est = a la valeur de getid
+// create a display variable that returns from the database a vehicle whose is = the value of getid
 $donnee=$manager->getVehicle($_GET['id']);
 
 $class=ucfirst($donnee['categories']);
 
-// var_dump($class);
-
+//create objet
 $vehicle= new $class($donnee);
 
 include '../vue/read.php';

@@ -1,6 +1,6 @@
 <?php
 
-class Moto extends vehicle
+class Moto extends Vehicle
 {
 
     protected $twowheels;

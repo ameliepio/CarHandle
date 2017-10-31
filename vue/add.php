@@ -5,22 +5,23 @@ require 'header.php';
 
 <h1>Add Vehicle</h1>
 
-<form>
-  <div class="form-group">
+
+    <form class="form"  method='post' action="add.php">
+  <div class="form-group" >
     <label for="exampleInputCategories">Categories</label>
-    <input type="text" class="form-control" id="exampleInputCategories" aria-describedby="emailHelp" placeholder="Enter Categories">
+    <input type="text" name ="Categories" class="form-control" id="exampleInputCategories" aria-describedby="emailHelp" placeholder="Enter Categories">
   </div>
   <div class="form-group">
     <label for="exampleInputMark">Mark</label>
-    <input type="text" class="form-control" id="exampleInputMark" placeholder="Mark">
+    <input type="text" name='Mark' class="form-control" id="exampleInputMark" placeholder="Mark">
   </div>
   <div class="form-group">
     <label for="exampleInputColor">Color</label>
-    <input type="text" class="form-control" id="exampleInputColor" placeholder="Color">
+    <input type="text" name="Color" class="form-control" id="exampleInputColor" placeholder="Color">
   </div>
   <div class="form-group">
     <label for="exampleInputPrice">Price</label>
-    <input type="text" class="form-control" id="exampleInputPrice" placeholder="Price">
+    <input type="text" name="Price" class="form-control" id="exampleInputPrice" placeholder="Price">
   </div>
   <div class="form-group">
     <label for="exampleDescription">Description</label>
